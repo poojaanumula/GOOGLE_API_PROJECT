@@ -17,7 +17,7 @@ const Header = ({ children }) => {
       <form onSubmit={submitForm} className={Classes.form}>
         <input
           type="text"
-          placeholder="Search your books"
+          placeholder="Find books..."
           value={inputVal}
           onChange={(e) => setInputVal(e.target.value)}
           className={Classes.input_style}
