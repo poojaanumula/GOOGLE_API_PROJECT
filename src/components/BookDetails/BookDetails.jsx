@@ -51,7 +51,9 @@ const BookDetails = ({ bookId }) => {
         <b>Language:</b> {volumeInfo.language==='en'? "English":" "}
       </p>
       <p className={Classes.title}>
-      <b>Description:</b>  {volumeInfo.description ? volumeInfo.description.slice(0, 100) : "No description available"}
+      <b>Description:</b>  {volumeInfo.description ? 
+        volumeInfo.description.slice(0, 100) :
+       "No description available"}
       </p>
     
       {/* <p>
