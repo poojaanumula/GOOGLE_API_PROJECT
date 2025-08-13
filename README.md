@@ -22,15 +22,18 @@
 </ul>
 <h2>Build Steps</h2>
 <ul>
-  <li>1.Clone the repository <br>
-  git clone https://github.com/poojaanumula/GOOGLE_API_PROJECT.git
+  <li> <b>Clone the repository</b> <br>
+   git clone https://github.com/poojaanumula/GOOGLE_API_PROJECT.git
+  </li>
+  <li><b>Navigate to folder</b><br>
+       cd GOOGLE_API_PROJECT
+  <li>
+    <b>Install dependencies</b><br>
+    npm install
   </li>
   <li>
-    2.Install dependencies
-  </li>
-  <li>
-    3.Run the development server.<br>
-    npm run build
+    <b>Run the development server.</b><br>
+     npm run dev
 
   </li>
 </ul>
