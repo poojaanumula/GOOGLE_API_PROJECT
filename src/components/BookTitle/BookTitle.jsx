@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import Classes from "./BookTitle.module.scss";
 import BookDetails from "../BookDetails/BookDetails";
@@ -14,7 +13,7 @@ const BookTitle = ({ data }) => {
       <article className={Classes.card}>
         <h3 className={Classes.h3} title={data.volumeInfo.title}>
           {data.volumeInfo.title.length > 30
-            ? `${data.volumeInfo.title.slice(0, 30)}...`
+            ? `${data.volumeInfo.title}`
             : data.volumeInfo.title}
         </h3>
         <img
@@ -30,15 +29,15 @@ const BookTitle = ({ data }) => {
           }}
         >
           <b>Author: </b>
-              {data.volumeInfo.authors ? data.volumeInfo.authors[0] : "Author does not exist"}
+          {data.volumeInfo.authors
+            ? data.volumeInfo.authors[0]
+            : "Author does not exist"}
         </h4>
-      
+
         <button onClick={modalOpen} className={Classes.btn}>
           Read More...
         </button>
       </article>
-
-      {/* Modal Implementation */}
       <div
         className={Classes.modalOverlay}
         style={{ display: modalState ? "block" : "none" }}

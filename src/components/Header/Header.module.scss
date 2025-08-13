@@ -20,8 +20,13 @@
     margin:10px;
     cursor: pointer;
 }
+.error_message{
+    color:red;
+    font-size: 17px;
+    font-weight: bold;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 .input_button{
-    //padding: 8px;
     background-color: rgba(64,134,244,255);
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -40,7 +45,6 @@
     margin: 0;
 }
 
-/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .google_image{
        width:150px;
@@ -57,7 +61,6 @@
         justify-content: center;
     }
     .input_button{
-        //padding: 8px;
         background-color: rgba(64,134,244,255);
         border-radius: 5px;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;

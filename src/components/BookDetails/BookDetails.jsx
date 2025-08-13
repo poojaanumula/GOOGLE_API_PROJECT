@@ -5,7 +5,6 @@ import Classes from './BookDetails.module.scss';
 const BookDetails = ({ bookId }) => {
   const [book, setBook] = useState(null);
   const [error, setError] = useState(null);
-
   useEffect(() => {
     const fetchBookDetails = async () => {
       try {
@@ -31,9 +30,7 @@ const BookDetails = ({ bookId }) => {
   if (!book) {
     return <div>Loading...</div>;
   }
-
   const { volumeInfo } = book;
-
   return (
     <div className={Classes.article}>
       <h3 className={Classes.title}>{volumeInfo.title}</h3>
@@ -55,10 +52,6 @@ const BookDetails = ({ bookId }) => {
         volumeInfo.description.slice(0, 100) :
        "No description available"}
       </p>
-    
-      {/* <p>
-        <b>Description:</b> {volumeInfo.description}
-      </p> */}
     </div>
   );
 };

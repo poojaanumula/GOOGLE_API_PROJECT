@@ -1,70 +1,67 @@
-.card{
-   
-    display: flex;
-    gap:10px;
-    height: 330px;
-    flex-direction: column;
-    cursor: pointer;
-    width:250px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
-
+.card {
+  display: flex;
+  gap: 10px;
+  height: 330px;
+  flex-direction: column;
+  cursor: pointer;
+  width: 250px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 .modalOverlay {
-    position: fixed;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    width: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
 
-  }
-  
-  .modalContent {
-    background: rgb(190, 210, 245);
-    padding: 20px;
-    border-radius: 8px;
-    max-width: 500px;
-    width: 90%;
-    position: relative;
-  }
-  
-  .closeButton {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: none;
-    border: none;
-    font-size: 1.5rem;
+.modalContent {
+  background: rgb(190, 210, 245);
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.h3 {
+  color: black;
+  text-align: center;
+  padding: 3px;
+}
+.btn {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  width: 50%;
+  align-self: center;
+  border-radius: 5px;
+  margin: 10px;
+  &:hover {
     cursor: pointer;
   }
-  .h3{
-    color: black;
-    text-align: center;
-    padding: 3px;
-  }
-  .btn{
-    padding: 10px;
-    background-color:black;
-    color: white;
-    width: 50%;
-    align-self: center;
-    border-radius: 5px;
-    margin: 10px;
-    &:hover{
-      cursor: pointer;
-    }
-  }
-  .image{
-    width:100px;
-    height:100px;
-    align-self:center;
-    background-size:cover;
-  }
+}
+.image {
+  width: 100px;
+  height: 100px;
+  align-self: center;
+  background-size: cover;
+}
 //   /* Extra small devices (phones, 600px and down) */
 // @media only screen and (max-width: 600px) {
 //   h3{
@@ -74,55 +71,55 @@
 // }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  h3{
-    font-size:22px;
+  h3 {
+    font-size: 22px;
   }
   .modalContent {
     //background: rgb(190, 210, 245);
     padding: 10px;
     border-radius: 8px;
-    width:300px;
+    width: 300px;
     position: relative;
     align-items: center;
-    border:2px solid black;
+    border: 2px solid black;
   }
   .modalOverlay {
     position: fixed;
     top: 50%;
-    left:50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     width: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1000;
-
   }
-  .card{
-    gap:10px;
+  .card {
+    gap: 10px;
     height: 330px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     cursor: pointer;
-    width:250px;
+    width: 250px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-.closeButton {
-  position: absolute;
-  top: 10px;
-  background: none;
-  border: none;
-  font-size: 1rem;
-  cursor: pointer;
-}
-.modalContent {
-  background: rgb(190, 210, 245);
-  padding: 20px;
-  border-radius: 8px;
-  max-width: 500px;
-  width: 95%;
-  position: relative;
-}
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+  .closeButton {
+    position: absolute;
+    top: 10px;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .modalContent {
+    background: rgb(190, 210, 245);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 95%;
+    position: relative;
+  }
 }

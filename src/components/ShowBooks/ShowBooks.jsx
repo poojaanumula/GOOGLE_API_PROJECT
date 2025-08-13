@@ -3,6 +3,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { SearchTerm } from "../Header/Header";
 import BookCard from "../BookCard/BookCard";
+import Classes from './ShowBooks.module.scss'
 
 const ShowBooks = () => {
   const { updatedInput } = useContext(SearchTerm);
@@ -55,7 +56,7 @@ const ShowBooks = () => {
     <div>
       {loading && <p>Loading...</p>}
       {!loading && updatedInput && finalres.length === 0 && !error && (
-        <p style={{ color: "red" }}>
+        <p className={Classes.bookNotFound}>
           The book "{updatedInput}" was not found.
         </p>
       )}
